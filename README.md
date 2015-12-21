@@ -1,2 +1,2 @@
 # op-common
-One page template commun elements (mainly subdomains of eebulle.ch)
+One page template common elements (mainly subdomains of eebulle.ch)
