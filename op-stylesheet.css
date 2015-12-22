@@ -1,5 +1,50 @@
 /*
- * general design for sections (fixed ones)
+ * Global
+ */
+ @font-face {
+ 	font-family: 'gentleman';
+ 	src: url(/assets/fonts/gentleman-800-bold-webfont.woff),
+ 			 url(/assets/fonts/gentleman-800-bold-webfont.woff2),
+ 	     url(/assets/fonts/gentleman-800-bold-webfont.ttf);
+ 	font-weight: 800;
+ }
+
+ @font-face {
+ 	font-family: 'gentleman';
+ 	src: url(/assets/fonts/gentleman-900-heavy-webfont.woff),
+ 			 url(/assets/fonts/gentleman-900-heavy-webfont.woff2),
+ 	     url(/assets/fonts/gentleman-900-heavy-webfont.ttf);
+ 	font-weight: 900;
+ }
+
+ @font-face {
+ 	font-family: 'gentleman';
+ 	src: url(/assets/fonts/gentleman-600-regular-webfont.woff),
+ 			 url(/assets/fonts/gentleman-600-regular-webfont.woff2),
+ 	     url(/assets/fonts/gentleman-600-regular-webfont.ttf);
+ 	font-weight: 600;
+ }
+
+ body, html {
+ 	font-family: 'gentleman';
+ 	height: 100%;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+  line-height: 4em;
+}
+
+p {
+  padding-bottom: 1em;
+  font-weight: 100;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*
+ * Sections
  */
 section.fixed {
 	background-attachment: fixed;
@@ -35,9 +80,6 @@ section.fixed h1,section.fixed h2 {
 	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/*
- * general design for sections (scrolling ones)
- */
 section.scrolling {
 	box-shadow: 0 0 50px rgba(0,0,0,0.5);
 	line-height: 1.6;
@@ -56,7 +98,9 @@ section .container::after {
 	display: table;
 }
 
-/* Small devices */
+/*
+ * Responsiveness
+ */
 @media (max-width: 768px)
 {
     #scrollbar {
