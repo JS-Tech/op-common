@@ -23,7 +23,7 @@ p {
   font-weight: 100;
 }
 
-img {
+img, iframe {
 	max-width: 100%;
 }
 
